@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : applicationContext.xml
+    Created on : October 26, 2011, 5:08 PM
+    Author     : Mario Batres
+    Description: Beans definitions.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- First way to declare a bean.-->
+    <bean name="user1" class="org.guatejug.learningspring.introspring.User">
+        <property name="userId">
+            <value>1</value>
+        </property>
+        <property name="name">
+            <value>Zia Woods</value>
+        </property>
+        <property name="username">
+            <value>zwoods</value>
+        </property>
+        <property name="password">
+            <value>lacus</value>
+        </property>
+    </bean>
+    
+    <!-- Second way to declare a bean.-->
+    <bean name="user2" class="org.guatejug.learningspring.introspring.User">
+        <property name="userId" value="2" />            
+        <property name="name" value="Fallon Cotton" />
+        <property name="username" value="fcotton" />
+        <property name="password" value="ullamcorper" />
+    </bean>
+    
+</beans>
